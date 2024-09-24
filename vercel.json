@@ -1,0 +1,7 @@
+{
+    "functions": {
+        "api/get_audio.py": {
+            "runtime": "python3.9"
+        }
+    }
+}
