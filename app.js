@@ -44,15 +44,15 @@ function renderItems(itemsToRender = items) {
     itemList.innerHTML = '';
     itemsToRender.forEach(item => {
         const itemElement = document.createElement('div');
-        itemElement.className = 'bg-dark-200 p-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105';
+        itemElement.className = 'bg-dark-300 p-6 rounded-2xl shadow-lg transition duration-300 ease-in-out transform hover:scale-105';
         itemElement.innerHTML = `
             <h3 class="font-bold text-xl mb-2 text-purple-400">${item.name}</h3>
-            <p class="mb-1"><span class="font-semibold">MRP:</span> ₹${item.mrp.toFixed(2)}</p>
-            <p class="mb-1"><span class="font-semibold">Mfg Date:</span> ${formatDate(item.manufacturingDate)}</p>
-            <p class="mb-1"><span class="font-semibold">Exp Date:</span> ${formatDate(item.expiryDate)}</p>
-            <p class="mb-1"><span class="font-semibold">Cost:</span> ₹${item.costPrice.toFixed(2)}</p>
-            <p class="mb-3"><span class="font-semibold">Quantity:</span> ${item.quantity}</p>
-            <button class="sellBtn bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition duration-300 ease-in-out" data-id="${item.id}">Sell</button>
+            <p class="mb-1"><span class="font-semibold text-pink-400">MRP:</span> ₹${item.mrp.toFixed(2)}</p>
+            <p class="mb-1"><span class="font-semibold text-pink-400">Mfg Date:</span> ${formatDate(item.manufacturingDate)}</p>
+            <p class="mb-1"><span class="font-semibold text-pink-400">Exp Date:</span> ${formatDate(item.expiryDate)}</p>
+            <p class="mb-1"><span class="font-semibold text-pink-400">Cost:</span> ₹${item.costPrice.toFixed(2)}</p>
+            <p class="mb-3"><span class="font-semibold text-pink-400">Quantity:</span> ${item.quantity}</p>
+            <button class="sellBtn bg-gradient-to-r from-green-500 to-green-600 text-white px-4 py-2 rounded-full transition duration-300 ease-in-out hover:shadow-neon" data-id="${item.id}">Sell</button>
         `;
         itemList.appendChild(itemElement);
     });
