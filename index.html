@@ -14,7 +14,10 @@
             <input type="text" id="searchInput" placeholder="Search items..." class="w-full p-2 rounded-lg bg-gray-800 text-white">
         </div>
 
-        <button id="addItemBtn" class="mb-6 bg-gradient-to-r from-purple-500 to-pink-600 text-white px-6 py-3 rounded-full transition duration-300 ease-in-out hover:shadow-lg">Add New Item</button>
+        <div class="flex space-x-4 mb-6">
+            <button id="addItemBtn" class="bg-gradient-to-r from-purple-500 to-pink-600 text-white px-6 py-3 rounded-full transition duration-300 ease-in-out hover:shadow-lg">Add New Item</button>
+            <a href="bill.html" class="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-3 rounded-full transition duration-300 ease-in-out hover:shadow-lg inline-flex items-center justify-center">Sell</a>
+        </div>
 
         <div id="itemList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
     </div>

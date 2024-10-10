@@ -60,7 +60,6 @@ function renderItems(itemsToRender = items) {
             <p class="mb-1"><span class="font-semibold text-pink-400">Cost:</span> ₹${item.costPrice.toFixed(2)}</p>
             <p class="mb-3"><span class="font-semibold text-pink-400">Quantity:</span> ${item.quantity}</p>
             <div class="flex space-x-2">
-                <button class="sellBtn bg-gradient-to-r from-green-500 to-green-600 text-white px-4 py-2 rounded-full transition duration-300 ease-in-out hover:shadow-lg" data-id="${item.id}">Sell</button>
                 <button class="editBtn bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-full transition duration-300 ease-in-out hover:shadow-lg" data-id="${item.id}">Edit</button>
             </div>
         `;
